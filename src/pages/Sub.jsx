@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet";
 import {useSearchParams} from "react-router-dom";
 
 const Sub = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const currentUrl = window.location.href;
     console.log(searchParams.get('sort'));
 
