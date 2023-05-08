@@ -31,8 +31,8 @@ const Sub = () => {
                     content={currentUrl}
                 />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content={data.title} />
-                <meta property="og:description" content="Your description" />
+                <meta property="og:title" content="서브 페이지" />
+                <meta property="og:description" content="서브 페이지 설명" />
                 <meta
                     property="og:image"
                     content={data.imgUrl}
