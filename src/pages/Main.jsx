@@ -23,7 +23,7 @@ const Main = () => {
                     content="https://devshowroom.hyphen.im/medicalrecordsearch"
                 />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="안녕" />
+                <meta property="og:title" content="메이페이지 설명" />
                 <meta property="og:description" content="Your description" />
                 <meta
                     property="og:image"
