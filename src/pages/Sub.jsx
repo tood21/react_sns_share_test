@@ -1,8 +1,11 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
+import {useSearchParams} from "react-router-dom";
 
 const Sub = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
     const currentUrl = window.location.href;
+    console.log(searchParams.get('sort'));
 
     const shareFacebook = () => {
         window.open(
@@ -16,7 +19,7 @@ const Sub = () => {
 
     const data = {
         url: currentUrl,
-        title: "타이틀11",
+        title: searchParams.get('sort'),
         imgUrl: "https://hyphen.im/assets/images/common/og_image.jpeg"
     }
     return (
