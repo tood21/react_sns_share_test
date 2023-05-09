@@ -41,7 +41,7 @@ const Main = () => {
                 />
                 <meta name="twitter:title" content="메인 트위터 타이틀" />
                 <meta name="twitter:description" content="메인 트위터 설명" />
-                <meta name="twitter:card" content="photo" />
+                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:url" content="https://hyphen.im/" />
                 <meta
                     name="twitter:image"
