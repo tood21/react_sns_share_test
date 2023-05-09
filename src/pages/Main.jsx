@@ -14,6 +14,16 @@ const Main = () => {
             'width=626,height=436'
         );
     };
+
+    const shareTwitter = () => {
+        let url = encodeURIComponent(currentUrl);
+        let title = '메인페이지 타이틀';
+        window.open(
+            `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
+            'twitter-share',
+            'width=400, height=400'
+        );
+    };
     return (
         <div>
             <Helmet>
@@ -29,10 +39,19 @@ const Main = () => {
                     property="og:image"
                     content="https://hyphen.im/assets/images/common/og_image.jpeg"
                 />
+                <meta name="twitter:title" content="메인 트위터 타이틀" />
+                <meta name="twitter:description" content="메인 트위터 설명" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:url" content={currentUrl} />
+                <meta
+                    name="twitter:image"
+                    content="https://hyphen.im/assets/images/common/og_image.jpeg"
+                />
             </Helmet>
             <h1>메인페이지</h1>
             <button onClick={shareFacebook} type={"button"}>페이스북</button>
-            <button type={"button"}>트위터</button>
+            <button onClick={shareTwitter}  type={"button"}>트위터</button>
+
         </div>
     );
 };

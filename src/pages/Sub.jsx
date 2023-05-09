@@ -17,6 +17,16 @@ const Sub = () => {
         );
     };
 
+    const shareTwitter = () => {
+        let url = encodeURIComponent(currentUrl);
+        let title = '서브페이지 타이틀';
+        window.open(
+            `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
+            'twitter-share',
+            'width=400, height=400'
+        );
+    };
+
     const data = {
         url: currentUrl,
         title: searchParams.get('sort'),
@@ -40,7 +50,7 @@ const Sub = () => {
             </Helmet>
             <h1>서브페이지</h1>
             <button onClick={shareFacebook} type={"button"}>페이스북</button>
-            <button type={"button"}>트위터</button>
+            <button onClick={shareTwitter} type={"button"}>트위터</button>
         </div>
     );
 };
