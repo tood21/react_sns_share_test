@@ -27,6 +27,7 @@ function App() {
       <Routes>
           <Route path='/main' element={<Main />} />
           <Route path='/sub' element={<Sub />} />
+          <Route path="*" element={<Main />} />
       </Routes>
     </div>
   );
