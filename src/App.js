@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-        <Link to={'/main'}>메인</Link>
+        <Link to={'/main?id=1987398127'}>메인</Link>
         <Link to={'/sub'}>서브</Link>
       테스트용
         <button onClick={shareFacebook} type={"button"}>페이스북</button>
