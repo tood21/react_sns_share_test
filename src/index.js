@@ -5,22 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
 
-if (container.hasChildNodes()) {
-    ReactDOM.hydrateRoot(
-        container,
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <App />
-        </BrowserRouter>
-    );
+
+const element = (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <App />
+    </BrowserRouter>
+);
+
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+
+if (rootElement.hasChildNodes()) {
+    ReactDOM.hydrateRoot(rootElement, element);
 } else {
-    root.render(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <App />
-        </BrowserRouter>
-    );
+    root.render(element);
 }
 
 // If you want to start measuring performance in your app, pass a function
