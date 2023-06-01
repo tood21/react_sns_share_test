@@ -33,8 +33,8 @@ const Main = () => {
                     content="https://devshowroom.hyphen.im/medicalrecordsearch"
                 />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="메이페이지 타이틀 메타" />
-                <meta property="og:description" content="메이페이지 설명" />
+                <meta property="og:title" content="메인 타이틀 변경 1" />
+                <meta property="og:description" content="메인 설명 변경 1" />
                 <meta
                     property="og:image"
                     content="https://hyphen.im/assets/images/common/og_image.jpeg"
