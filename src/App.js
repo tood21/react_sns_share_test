@@ -3,6 +3,7 @@ import {Link, Route, Routes} from "react-router-dom";
 import Main from "./pages/Main";
 import Sub from "./pages/Sub";
 import React from "react";
+import NotInclude from "./pages/NotInclude";
 
 function App() {
     const currentUrl = window.location.href;
@@ -27,6 +28,7 @@ function App() {
       <Routes>
           <Route path='/main' element={<Main />} />
           <Route path='/sub' element={<Sub />} />
+          <Route path='/notInclude' element={<NotInclude />} />
           <Route path="*" element={<Main />} />
       </Routes>
     </div>
